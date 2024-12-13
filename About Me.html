@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Sam Peeter</title>
+    <link rel="stylesheet" href="../styles.css"> <!-- Link to your main CSS file -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <section id="about-me">
+        <!-- Introduction -->
+        <div class="intro">
+            <h2>About Me</h2>
+            <p>Hi, I'm Sam Peeter. Here's a bit about my journey and the things that drive me.</p>
+        </div>
+       
+        
+            <!-- Education Section -->
+            <div class="section">
+                <div class="text">
+                    <h3>Education</h3>
+                    <p>10th at Holy Angels English Medium Higher Secondary School, Adoor. 12th at NSS Higher Secondary School, Adoor. BCA from Mar Chrysostom College, Adoor, Kerala University. Currently pursuing MCA from Mar Athanasius College, Thiruvalla under MG University.</p>
+                </div>
+                <div class="image">
+                    <img src="../images/gra.jpeg" alt="Graduation">
+                </div>
+            </div>
+        
+            <!-- Skills Section -->
+            <div class="section reverse">
+                <div class="text">
+                    <h3>Skills</h3>
+                    <p>Full-stack Developer, Video Editor, Swing Trader.</p>
+                </div>
+                <div class="image">
+                    <img src="../images/skills.jpeg" alt="Skills">
+                </div>
+            </div>
+        
+            <!-- Volunteer Section -->
+            <div class="section">
+                <div class="text">
+                    <h3>Volunteer Work</h3>
+                    <p>Red Cross and NSS volunteer.</p>
+                </div>
+                <div class="image">
+                    <img src="../images/nss.jpeg" alt="NSS Volunteer">
+                </div>
+            </div>
+        
+            <!-- Sports Section -->
+            <div class="section reverse">
+                <div class="text">
+                    <h3>Sports</h3>
+                    <p>Black belt in karate, football, and cricket player.</p>
+                </div>
+                <div class="image">
+                    <img src="../images\HD-Soccer-Wallpaper.jpg" alt="Sports">
+                </div>
+            </div>
+        
+            <!-- Hobbies Section -->
+            <div class="section">
+                <div class="text">
+                    <h3>Hobbies</h3>
+                    <p>Listening to music, watching movies, and traveling.</p>
+                </div>
+                <div class="image">
+                    <img src="../images/Hobbies.jpeg" alt="Hobbies">
+                </div>
+            </div>
+        </section>
+        
+    
+
+
+    <footer>
+        <p>&copy; 2024 Sam Peeter. All Rights Reserved.</p>
+        <div>
+            <a href="https://www.linkedin.com/in/sam-peeter-b133b0292/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
+        </div>
+    </footer>
+
+<style>/* Reset styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+
+
+    
+    /* Main body styling */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #121212;
+        color: #f0f0f0;
+    }
+    
+    /* Navbar */
+   /* Navbar */
+header {
+    background: #0d0d0d; /* Dark background for header */
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* General box-sizing reset */
+*, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+    
+/* Footer */
+footer {
+        background-color: #121212;
+        color: #f0f0f0;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav ul li a:hover {
+        color: #FF800F;
+    }
+    
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0a0f29;
+    color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #FF800F;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 30px 0;
+}
+
+/* Layout for each section */
+#about-me .section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    margin: 20px 0;
+    background: linear-gradient(145deg, #1a1d3b, #2a2e55);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#about-me .section.reverse {
+    flex-direction: row-reverse;
+}
+
+#about-me .section:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Text Styling */
+#about-me .text {
+    width: 50%;
+    padding: 20px;
+}
+
+#about-me .text h3 {
+    color: #FF800F;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#about-me .text h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #FF800F;
+    margin-top: 8px;
+}
+
+#about-me .text p {
+    color: #ccc;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* Image Styling */
+#about-me .image {
+    width: 40%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+#about-me .image img {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+#about-me .section:hover .image img {
+    transform: scale(1.05);
+}
+
+/* Specific Section Colors with Gradients */
+#about-me .section:nth-child(2n) {
+    background: linear-gradient(145deg, #2a2e55, #1a1d3b);
+}
+
+/* Section Borders */
+#about-me .section:nth-child(1) .text h3::after {
+    background: #198754; /* Education - Green */
+}
+
+#about-me .section:nth-child(2) .text h3::after {
+    background: #6610f2; /* Skills - Purple */
+}
+
+#about-me .section:nth-child(3) .text h3::after {
+    background: #20c997; /* Volunteer - Teal */
+}
+
+#about-me .section:nth-child(4) .text h3::after {
+    background: #dc3545; /* Sports - Red */
+}
+
+#about-me .section:nth-child(5) .text h3::after {
+    background: #ffc107; /* Hobbies - Yellow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #about-me .section {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    #about-me .section.reverse {
+        flex-direction: column;
+    }
+
+    #about-me .text, #about-me .image {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #about-me .image img {
+        max-width: 200px;
+    }
+}
+
+   </style>
+
+</body>
+</html>

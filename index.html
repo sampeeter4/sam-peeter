@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Sam Peeter</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your main CSS file -->
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/About Me.html">About Me</a></li>
+                <li><a href="pages/Portfolio.html">Portfolio</a></li>
+                <li><a href="pages/Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <!-- Hero Section -->
+<section id="hero">
+    <img src="images/DSC_2128.JPG" alt="Sam Peeter" class="profile-image">
+    <h1>Welcome to My Personal Website</h1>
+    <p>Hi, I'm Sam Peeter. I believe everything happens for a reason – welcome to my journey!</p>
+  
+</section>
+
+
+   
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Sam Peeter. All Rights Reserved.</p>
+        <div>
+            <a href="https://www.linkedin.com/in/sam-peeter-b133b0292/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
+        </div>
+    </footer>
+
+    <!-- CSS Styles -->
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+    
+
+/* Profile Image Styles */
+.profile-image {
+    width: 150px;             /* Set the desired width */
+    height: 150px;            /* Set the desired height (same as width for a circle) */
+    border-radius: 50%;       /* This makes the image circular */
+    object-fit: cover;        /* Ensures the image covers the area without stretching */
+    margin-bottom: 20px;      /* Space between image and text */
+}
+
+
+
+        /* Main body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #f0f0f0;
+        }
+
+        /* Navbar */
+        /* Navbar */
+header {
+    background: #343a40; /* Dark background for header */
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* General box-sizing reset */
+*, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+        /* Hero Section */
+        #hero {
+            height: 100vh;
+            background-color: #1e1e1e;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        #hero p {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        #hero .btn {
+            padding: 10px 20px;
+            background-color: #FF800F;     
+            color: #121212;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        #hero .btn:hover {
+            background-color: #dc3545;
+        }
+
+        /* About Section */
+        #about {
+            padding: 40px;
+            background-color: #1c1c1c;
+            text-align: center;
+        }
+
+        #about h2 {
+            margin-bottom: 20px;
+            color: #FF800F;
+        }
+
+        /* Portfolio Section */
+        #portfolio {
+            padding: 40px;
+            background-color: #1e1e1e;
+            text-align: center;
+        }
+
+        .projects {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .project {
+            background-color: #2a2a2a;
+            padding: 20px;
+            width: 200px;
+            border-radius: 5px;
+            color: #f0f0f0;
+        }
+
+        .project h3 {
+            margin-bottom: 10px;
+            color: #FF800F;
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 40px;
+            background-color: #1c1c1c;
+            text-align: center;
+        }
+
+        #contact a {
+            color: #FF800F;
+            text-decoration: none;
+        }
+
+        #contact a:hover {
+            color: #dc3545;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #121212;
+            color: #f0f0f0;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            .projects {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .project {
+                width: 90%;
+            }
+        }
+
+        /* Sticky Header */
+header {
+    position: sticky; /* Make the header sticky */
+    top: 0;           /* Position it at the top of the viewport */
+    background-color: #1e1e1e; /* Background color */
+    z-index: 1000;   /* Ensure it is above other content */
+    width: 100%;     /* Full width */
+}
+
+nav {
+    padding: 10px 0; /* Padding for the nav */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.3s; /* Transition effect for hover */
+}
+
+nav ul li a:hover {
+    color: #FF800F; /* Change color on hover */
+}
+
+
+    </style>
+</body>
+</html>

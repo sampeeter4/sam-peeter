@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Sam Peeter</title>
+    <link rel="stylesheet" href="../styles.css"> <!-- Link to your main CSS file -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="About Me.html">About Me</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="project">
+            <div class="project-text">
+                <h3>NSS Blood Bank System</h3>
+                <p>A system designed to manage and streamline blood donations and inventory for NSS volunteers.</p>
+            </div>
+            <div class="project-image">
+                NSS Blood Bank System
+            </div>
+        </div>
+    
+        <div class="project reverse">
+            <div class="project-image">
+                <a href="https://sampeeter4.github.io/AC-repairing/" target="_blank" title="Visit My AC Repairing Page">Visit - AC Repairing Page</a>
+
+            </div>
+            <div class="project-text">
+                <h3>AC Repair Website</h3>
+                <p>A professional website offering services and booking options for AC repairs in Dubai.</p>
+            </div>
+        </div>
+    
+        <div class="project">
+            <div class="project-text">
+                <h3>Online Food Delivery Site</h3>
+                <p>A responsive food delivery platform with order tracking, menu browsing, and secure checkout features.</p>
+            </div>
+            <div class="project-image">
+                food-delivery app
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Sam Peeter. All Rights Reserved.</p>
+        <div>
+            <a href="https://www.linkedin.com/in/sam-peeter-b133b0292/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
+        </div>
+    </footer>
+<style>/* Reset styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    /* Main body styling */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #121212;
+        color: #f0f0f0;
+    }
+    
+    /* Navbar */
+ /* Navbar */
+ header {
+    background: #070707; /* Dark background for header */
+    color: white;
+    padding: 10px 0; /* Adjust as needed */
+    margin: 0; /* Remove any default margins */
+    width: 100%; /* Full width to touch left and right edges */
+    position: fixed; /* Keep header at the top even when scrolling */
+    top: 0; /* Fix header to the top of the viewport */
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+/* Styling for the link */
+a {
+    color: #007acc; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+a:hover {
+    color: #005b99; /* Darker color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Additional styling for button-like appearance */
+a.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007acc;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a.button-link:hover {
+    background-color: #005b99;
+    transform: scale(1.05);
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0; /* Remove any padding from nav */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* General box-sizing reset */
+*, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+   /* Portfolio Section Styling */
+#portfolio {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #13192e, #0e0e0e);
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#portfolio h2 {
+    font-size: 2.8em;
+    font-weight: 600;
+    color: #ffd700;
+    margin-bottom: 40px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#portfolio h2::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background: #ffd700;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.project-text {
+    flex: 1;
+    font-size: 1.2em;
+    line-height: 1.6;
+    padding: 20px;
+    color: #f5f5f5;
+    text-align: left;
+}
+
+.project h3 {
+    font-size: 1.8em;
+    font-weight: 500;
+    color: #ffde59;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1em;
+    color: #dcdcdc;
+}
+
+.project-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Alternate layout for each project */
+.project.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project.reverse {
+        flex-direction: column;
+    }
+
+    .project-text {
+        text-align: center;
+        padding: 15px;
+    }
+}
+ /* Footer */
+ footer {
+            background-color: #121212;
+            color: #f0f0f0;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+    
+    </style>
+
+</body>
+</html>

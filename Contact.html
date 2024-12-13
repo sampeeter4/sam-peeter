@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Sam Peeter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+             
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa; /* Light background color */
+            color: #343a40; /* Dark text color */
+            line-height: 1.6;
+            padding: 20px;   
+        }
+                              
+        
+
+          
+        header {
+    background: #0c0c0c; /* Dark background for header */
+    color: white;
+    padding: 10px 0; /* Adjust as needed */
+    margin: 0; /* Remove any default margins */
+    width: 100%; /* Full width to touch left and right edges */
+    position: fixed; /* Keep header at the top even when scrolling */
+    top: 0; /* Fix header to the top of the viewport */
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0; /* Remove any padding from nav */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* General box-sizing reset */
+*, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+
+body {
+  background: linear-gradient(to right, #392121 0%, #0c0c0c 100%);
+  font-size: 12px;
+}
+
+body, button, input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.background {
+  display: flex;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 10px;
+}
+
+.screen {     
+  position: relative;
+  background: #080808;
+  border-radius: 15px;
+}
+
+.screen:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  z-index: -1;
+}
+
+.screen-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: #4d4d4f;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.screen-header-left {
+  margin-right: auto;
+}
+
+.screen-header-button {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  border-radius: 8px;
+  background: white;
+}
+
+.screen-header-button.close {
+  background: #0c0c0c;
+}
+
+.screen-header-button.maximize {
+  background: #e8e925;
+}
+
+.screen-header-button.minimize {
+  background: #74c54f;
+}
+
+.screen-header-right {
+  display: flex;
+}
+
+.screen-header-ellipsis {
+  width: 3px;
+  height: 3px;
+  margin-left: 2px;
+  border-radius: 8px;
+  background: #999;
+}
+
+.screen-body {
+  display: flex;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #ea1d6f;
+  font-size: 26px;
+}
+
+.app-title:after {      
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 25px;
+  height: 4px;
+  background: #ea1d6f;
+}
+
+.app-contact {
+  margin-top: auto;
+  font-size: 8px;
+  color: #1b1919;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.message {
+  margin-top: 40px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0; 
+  text-align: right;
+}
+
+html, body {
+    height: 100%; /* Make sure the body takes full height */
+}
+
+               
+
+.map-container iframe {
+    width: 100%; /* Make iframe responsive */
+    max-width: 600px; /* Set a maximum width */
+    height: 450px; /* Fixed height for the iframe */
+    border: 0; /* Remove border */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow */
+    transition: transform 0.2s ease; /* Smooth transition for hover effect */
+}
+
+.map-container iframe:hover {
+    transform: scale(1.02); /* Slightly scale up on hover */
+}
+
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: #666;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: #ea1d6f;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.app-form-button:hover {
+  color: #b9134f;
+}
+
+.credits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  color: #ffa4bd;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.credits-link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.dribbble {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+/* General container styling */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Screen (Contact Form) */
+.screen {
+    background: #0a0a0a;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header buttons */
+.screen-header-left .screen-header-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 4px;
+}
+.screen-header-left .close { background: #ff5f57; }
+.screen-header-left .maximize { background: #ffbd2e; }
+.screen-header-left .minimize { background: #28c840; }
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-box {
+    background-color: #111010;
+    border-radius: 8px;
+    padding: 15px;
+    flex: 1 1 45%; /* Allows two boxes per row */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.contact-box:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    font-size: 1.5em;
+    color: #007acc;
+    margin-bottom: 10px;
+}
+
+.contact-detail {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-detail:hover {
+    color: #005b99;
+    text-decoration: underline;
+}
+
+.icon {
+    font-size: 1.5em;
+    color: #007acc;
+    margin-bottom: 10px;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+    }
+}
+
+.contact-page-header {
+    text-align: center; /* Center-aligns the header and paragraph */
+    margin-bottom: 40px;
+    padding-top: 3%; /* Adds space below the header */
+}
+
+.contact-page-header h1 {
+    font-size: 3em; /* Large size for the header */
+    color: #007acc; /* Professional blue color for the header */
+    font-weight: bold; /* Bold for emphasis */
+    margin-bottom: 15px; /* Adds space below the heading */
+}
+
+.contact-page-header p {
+    font-size: 1.2em; /* Slightly larger text for readability */
+    color: #666; /* Gray color for the paragraph */
+    line-height: 1.7; /* Increases line height for readability */
+    max-width: 800px; /* Constrains width to avoid overly wide text */
+    margin: 0 auto; /* Centers the paragraph */
+}
+
+        /* Footer */
+footer {
+        background-color: #121212;
+        color: #f0f0f0;
+        text-align: center;
+        padding: 10px 0;
+      
+        
+    }
+
+        /* Map container */
+        .map-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        iframe {
+            border: 0; /* No border for the iframe */
+            width: 100%;
+            max-width: 600px; /* Max width for responsive design */
+            height: 450px; /* Fixed height for the map */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="About Me.html">About Me</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contact-page-header">
+      <h1>Get in Touch</h1>
+      <p>Thank you for reaching out. Whether you have a business inquiry, a project proposal, or simply want to connect, I look forward to hearing from you. Please use the form below or contact me directly via phone or social media, and I will respond promptly. Let's explore how we can work together to achieve your goals.</p>
+  </div>
+
+
+    <div class="background">
+      <div class="container">
+          <div class="screen">
+              <div class="screen-header">
+                  <div class="screen-header-left">
+                      <div class="screen-header-button close"></div>
+                      <div class="screen-header-button maximize"></div>
+                      <div class="screen-header-button minimize"></div>
+                  </div>
+                  <div class="screen-header-right">
+                      <div class="screen-header-ellipsis"></div>
+                      <div class="screen-header-ellipsis"></div>
+                      <div class="screen-header-ellipsis"></div>
+                  </div>
+              </div>
+              <div class="screen-body">
+                  <div class="screen-body-item left">
+                      <div class="app-title">
+                          <span>CONTACT</span>
+                          <span>ME</span>
+                      </div>
+                  </div>
+                  <div class="screen-body-item">
+                      <div class="app-form">
+                          <div class="app-form-group">
+                              <input class="app-form-control" placeholder="NAME">
+                          </div>
+                          <div class="app-form-group">
+                              <input class="app-form-control" placeholder="EMAIL">
+                          </div>
+                          <div class="app-form-group">
+                              <input class="app-form-control" placeholder="CONTACT NO">
+                          </div>
+                          <div class="app-form-group message">
+                              <input class="app-form-control" placeholder="MESSAGE">
+                          </div>
+                          <div class="app-form-group buttons">
+                              <button class="app-form-button">CANCEL</button>
+                              <button class="app-form-button">SEND</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+        
+          </div>
+          <div class="contact-info">
+            <div class="contact-box">
+                <i class="fas fa-phone icon"></i>
+                <p>Phone: <a href="tel:7025584734" class="contact-detail">7025584734</a></p>
+            </div>
+            <div class="contact-box">
+                <i class="fas fa-envelope icon"></i>
+                <p>Email: <a href="mailto:sampeter9977@gmail.com" class="contact-detail">sampeter9977@gmail.com</a></p>
+            </div>
+            <div class="contact-box">
+                <i class="fab fa-whatsapp icon"></i>
+                <p>WhatsApp: <a href="https://wa.me/7025584734" class="contact-detail">7025584734</a></p>
+            </div>
+            <div class="contact-box">
+                <i class="fab fa-linkedin icon"></i>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/sam-peeter-b133b0292/" class="contact-detail" target="_blank">Sam Peeter</a></p>
+            </div>
+            <div class="contact-box">
+                <i class="fab fa-github icon"></i>
+                <p>GitHub: <a href="https://github.com/sampeeter4" class="contact-detail" target="_blank">sampeeter4</a></p>
+            </div>
+            <div class="contact-box">
+                <i class="fab fa-instagram icon"></i>
+                <p>Instagram: <a href="https://www.instagram.com/sam__peeter?igsh=M3B1NjV2Nm9uODI1&utm_source=qr" class="contact-detail" target="_blank">@sam__peeter</a></p>
+            </div>
+        </div>
+        
+          <div class="map-container">
+              <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15856.202239763317!2d76.6990166!3d9.1960678!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06184c1e81baf3%3A0x1a3964c634f0805d!2sYour%20Location%20Name!5e0!3m2!1sen!2sus!4v1611240366238!5m2!1sen!2sus"
+                  allowfullscreen="" loading="lazy"></iframe>
+          </div>
+      </div>
+  </div>
+  
+    
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sam Peeter. All Rights Reserved.</p>
+        <div>
+            <a href="https://www.linkedin.com/in/sam-peeter-b133b0292/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
+        </div>
+    </footer>
+</body>
+</html>
